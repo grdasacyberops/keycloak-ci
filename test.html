@@ -1,13 +1,13 @@
 <head>
     <script src="assets/keycloak.js"></script>
     <script>
-        // const keycloak = Keycloak({
-		// 	realm:'demo',
-		// 	clientId:'ci-client2',
-		// 	url:'http://localhost:8180/auth'
-		// });
+        const keycloak = Keycloak({
+			realm:'master',
+			clientId:'ci-client',
+			url:'http://132.145.137.32:8080/auth/',
+		});
 
-		const keycloak=Keycloak('assets/keycloak.json')
+		// const keycloak=Keycloak('assets/keycloak.json')
         keycloak.init({onLoad:'login-required'}).success(function(authenticated) {
             alert(authenticated ? 'authenticated' : 'not authenticated');
         }).error(function() {
