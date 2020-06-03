@@ -69,9 +69,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<script src='http://localhost/codeigniter/assets/keycloak.js'></script>
 	<script>
 		var keycloak = Keycloak({
-			url:'http://localhost:8180/auth',
-			realm:'demo',
-			clientId:'ci-client2'
+			url:'http://132.145.137.32:8080/auth/',
+			realm:'master',
+			clientId:'ci-client'
 		});
 		window.onload = function(){
 			keycloak.init({onLoad:'login-required'}).success(function(authenticated){
