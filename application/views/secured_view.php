@@ -68,11 +68,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</style>
 	<script src='http://desenv.elofy.com.br/assets/keycloak.js'></script>
 	<script>
-		var keycloak = Keycloak({
-			url:'http://132.145.137.32:8080/auth/',
-			realm:'master',
-			clientId:'ci-client'
-		});
+		// var keycloak = Keycloak({
+		// 	url:'http://132.145.137.32:8080/auth/',
+		// 	realm:'master',
+		// 	clientId:'ci-client'
+		// });
+		var keycloak= Keycloak('http://desenv.elofy.com.br/keycloak.json');
 		window.onload = function(){
 			keycloak.init({onLoad:'login-required'}).success(function(authenticated){
 				// console.log(authenticated ? 'authenticated' : 'not authenticated');
