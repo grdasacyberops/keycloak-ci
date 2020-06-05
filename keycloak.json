@@ -1,8 +1,10 @@
 {
-  "realm": "master",
-  "auth-server-url": "http://132.145.137.32:8080/auth/",
-  "ssl-required": "none",
-  "resource": "ci-client",
-  "public-client": true,
+  "realm": "Funcionarios",
+  "auth-server-url": "https://id.dasa.com.br/auth",
+  "ssl-required": "external",
+  "resource": "elofy",
+  "credentials": {
+    "secret": "35b9e54d-3641-46f8-b166-9d4f3691ddad"
+  },
   "confidential-port": 0
 }
