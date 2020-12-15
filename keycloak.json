@@ -4,7 +4,7 @@
   "ssl-required": "external",
   "resource": "elofy",
   "credentials": {
-    "secret": "4700024e-075e-4caf-bdde-d1267316223a"
+    "secret": "xxxxxxxxxxxxxxxxx"
   },
   "confidential-port": 0
 }
