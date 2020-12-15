@@ -1,10 +1,10 @@
 {
   "realm": "Funcionarios",
-  "auth-server-url": "https://id-hml.dasa.com.br/auth/",
+  "auth-server-url": "https://id-hml.xxxx.com.br/auth/",
   "ssl-required": "external",
   "resource": "elofy",
   "credentials": {
-    "secret": "4700024e-075e-4caf-bdde-d1267316223a"
+    "secret": "XXXX"
   },
   "confidential-port": 0
 }
